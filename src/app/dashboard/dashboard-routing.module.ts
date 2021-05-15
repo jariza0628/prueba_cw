@@ -10,8 +10,8 @@ import {MapsComponent} from '../pages/maps/maps.component';
 const routes: Routes = [
   {path: '', component: DashboardComponent,
     children: [
-      { path: '',               component: Dashboar },
-      { path: 'dashboard',      component: Dashboar },
+      { path: '',  redirectTo: 'user-profile' },
+      { path: 'dashboard',      component: DashboardComponent },
       { path: 'user-profile',   component: UserProfileComponent },
       { path: 'tables',         component: TablesComponent },
       { path: 'icons',          component: IconsComponent },
